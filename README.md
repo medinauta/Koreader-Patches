@@ -6,8 +6,8 @@ Desription
 <summary><h2>For SCREEN SAVER</h2></summary>
  <p><i>These patches are applied to the Sleep Screen</i></p>
 	<hr>
-<details open>
-	<summary><b>Kobo-style Sleep Banner</b>: 2-kobo-style-sleepscreen-banner.lua</summary>
+<details>
+	<summary><b>Kobo-style Sleep Banner</b></summary>
      <p>Redesigns the built-in 'banner' type sleep screen message to look like the native Kobo sleep screen style.<p/>
 
 **Mod:**
@@ -27,17 +27,26 @@ Desription
 > My custom message: pages left in chapter >> Time left in chapter. New Line with dashes. New line: Current page/total pages * % read. New line: Time left in book.  
 > You can add new lines by pressing the ENTER key.
 
-Patch: [2-kobo-style-sleepscreen-banner.lua](/2-kobo-style-sleepscreen-banner.lua)
+File: [2-kobo-style-sleepscreen-banner.lua](/2-kobo-style-sleepscreen-banner.lua)
 
 
 ![Screenshot Description](/screenshots/kobo-style-sleep-banner.jpg)
 	</details>
 
-<details>
+<details open>
 	<summary><b>Screensaver Utilities</b></summary>
-Injects utility information (like battery percentage or time) onto the screensaver image.
+Add 4 new toggles at the end of the "Sleep screen" menu :
+* [x] Close widgets before showing the screensaver
+* [x] Refresh before showing the screensaver
+* [x] Force NO FILL for images when in File Browser
+* [x] Center and shrink book cover
 
-[View Code](/2-screensaver-utilities.lua)
+By default it doesn't change the sleep screen behavior
+
+**Notes:** 
+> Force no fill: I have my screensvar set `Ignore book cover` to `When in file browser` this mean that when my device goes to sleep while in file browser, custom images (which have transparent background) will show instead of the cover, but since Inwant my book covers to have a fill when they show, this option will force to use `no fill` without needing to change it manually. 
+
+File: [2-screensaver-utilities.lua](/2-screensaver-utilities.lua)
 	
 
 ![Screenshot Description](link-to-your-image.png)
