@@ -7,7 +7,16 @@ Desription
  <p><i>These patches are applied to the Sleep Screen</i></p>
 <details>
 	<summary><b>Kobo-style Sleep Banner</b></summary>
-Adds a "Sleeping" banner or header to the screensaver, mimicking the native Kobo sleep screen style.
+<p>Redesigns the built-in 'banner' type sleep screen message to look like the native Kobo sleep screen style.</p>
+
+  **Mod:** 
+  
+ 	* "Avoid Night Mode" toggle so the colors aren't inverted.
+  	* Smart Title Case with small words ignored.
+	
+  **Settings: Set**  
+  >[!NOTE]
+>Useful inf
 
 [View Code](https://github.com/medinauta/Koreader-Patches/blob/main/2-kobo-style-sleepscreen-banner.lua)
 
