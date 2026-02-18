@@ -18,7 +18,7 @@ Desription
 **Settings:** 
 
 * Set your custom Sleep screen message in <i>`Settings > Screen > Sleep Screen > Sleep screen message > Edit sleep screen message`</i>, use the  <b>`info`</b> button for all the available variables.
-* In <i>`Settings > Screen > Sleep Screen > Sleep screen message`</i> set <i>`Container and position`</i> to <b>`Banner`</b>
+* In <i>`Settings > Screen > Sleep Screen > Sleep screen message`</i> set <i>`Container and position`</i> to <b>`Banner`</b>. Set the `Message Opacy` and `Vertical position` for the box here as well.
 * The patch adds the title followed by your custom sleep screen message. The default is Book title; you can change it inside the patch code.
 * Settings inside the patch code: Text to use for title, bg color, margin, font, font size, border, border size and color.
 
@@ -34,17 +34,18 @@ File: [2-kobo-style-sleepscreen-banner.lua](/2-kobo-style-sleepscreen-banner.lua
 	</details>
 
 <details open>
-	<summary><b>Screensaver Utilities</b></summary>
-Add 4 new toggles at the end of the "Sleep screen" menu :
+	<summary><b>Screensaver Utilities</b></summary> 
+	
+Add 4 new toggles at the end of the "Sleep screen" menu : 
 * [x] Close widgets before showing the screensaver
 * [x] Refresh before showing the screensaver
 * [x] Force NO FILL for images when in File Browser
 * [x] Center and shrink book cover
 
-By default it doesn't change the sleep screen behavior
+By default it doesn't change the sleep screen behavior.
 
 **Notes:** 
-> Force no fill: I have my screensvar set `Ignore book cover` to `When in file browser` this mean that when my device goes to sleep while in file browser, custom images (which have transparent background) will show instead of the cover, but since Inwant my book covers to have a fill when they show, this option will force to use `no fill` without needing to change it manually. 
+> Force no fill: I have my screensvar set to `Ignore book cover` > `When in file browser` this mean that when my device goes to sleep while in file browser, custom images (which have transparent background) will show instead of the book cover, but since I want my book covers to have a fill when sleeping while in reader, this option will force to use `No fill` when sleeping in file browser without needing to change the fill manually. 
 
 File: [2-screensaver-utilities.lua](/2-screensaver-utilities.lua)
 	
