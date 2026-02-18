@@ -1,6 +1,12 @@
 --[[ 
 User patch: Screensaver Utilities
-Version: 6.1 (Shared Context Fix)
+-- Add 4 new options @ the end of the "Sleep screen" menu :
+-- Close widgets before showing the screensaver
+-- Refresh before showing the screensaver
+-- Force NO FILL for images when in File Browser
+-- Center and shrink book cover
+
+-- By default it doesn't change the sleep screen behav
 ]]
 
 local logger = require("logger")
