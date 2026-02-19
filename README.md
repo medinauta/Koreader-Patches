@@ -32,6 +32,7 @@ Desription
 > My custom message: pages left in chapter >> Time left in chapter. New Line with dashes. New line: Current page/total pages * % read. New line: Time left in book.  
 > You can add new lines by pressing the ENTER key.
 
+<br/>
 <img alt="Screenshot image of this patch" src="/screenshots/kobo-style-sleep-banner.jpg" width="400"/>
 
 📂 [2-kobo-style-sleepscreen-banner.lua](/2-kobo-style-sleepscreen-banner.lua)
@@ -58,6 +59,7 @@ By default it doesn't change the sleep screen behavior.
 🗒️  **Notes:**  
 >Force no fill: I have my screensvar set to `Ignore book cover` > `When in file browser` this mean that when my device goes to sleep while in file browser, custom images (which have transparent background) will show instead of the book cover, but since I want my book covers to have a fill when sleeping while in reader, this option will force to use `No fill` when sleeping in file browser without needing to change the fill manually. 
 
+<br/>
 <img alt="Screenshot image of this patch" src="/screenshots/2-screensaver-utilities.png" width="400"/> 
 
    📂 [2-screensaver-utilities.lua](/2-screensaver-utilities.lua)
@@ -76,23 +78,25 @@ By default it doesn't change the sleep screen behavior.
 Adds a realistic "book spine" effect simmilar to Apple Books to the edge of cover thumbnails in the Mosaic/Grid browser.  
 <br/><br/>
 
-**Settings:** 
-* <ins>**Save**</ins> this image [book.spine.png](/icons/book.spine.png) inside the `koreader > icons` folder.	
-* Settings inside the patch code: spine width, intensity and offset.
-<br/><br/>
-
-📌 Original patch by <a href="https://github.com/advokatb/KOReader-Patches/blob/main/2-pt-book-spine-effect.lua">advokatb</a>	
-
 **Mod:**
 * [x] Removed the rendering spine drawing.
 * [x] Recreated the actual Apple Book spine images.
 * [x] Add a shadow to the image so the spine is also visible on white covers.
 * [x] Add a toggle in `Settings > Mosaic and detailed list settings` to turn ON/OFF the effect.
  <br/> <br/>
+ 
+**Settings:** 
+* <ins>**Save**</ins> this image [book.spine.png](/icons/book.spine.png) inside the `koreader > icons` folder.	
+* Settings inside the patch code: spine width, intensity and offset.
+<br/><br/>
+
+📌 Original patch by <a href="https://github.com/advokatb/KOReader-Patches/blob/main/2-pt-book-spine-effect.lua">advokatb</a>	
+<br/><br/>
 
 🗒️  **Notes:**  
 > Even though the image and the code are optimized for better cache, this effect may consume a lot of memory and slow down your device, avoid using other heavy patches like recurring count, total page in book, etc.
 
+<br/>
 <img alt="Screenshot image of this patch" src="/screenshots/screen-book-spine.png" width="600"/>
 
 📂 [2-MM--Book-spine-effect.lua](/2-MM--Book-spine-effect.lua)
