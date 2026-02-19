@@ -1,5 +1,6 @@
 --[[
     Book Spine Effect (Apple Books style)
+    Original patch: https://github.com/advokatb/KOReader-Patches/blob/main/2-pt-book-spine-effect.lua
     Optimized: pre-scaled cached spine + shadow
     Keeps alpha blending but avoids repeated scaling
 ]]--
@@ -134,3 +135,4 @@ local function patchBookSpineEffect(plugin)
 end
 
 userpatch.registerPatchPluginFunc("coverbrowser", patchBookSpineEffect)
+
