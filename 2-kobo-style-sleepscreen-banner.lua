@@ -1,7 +1,7 @@
 --[[ 
-Frankenpatch: Kobo-style Sleep Screen Banner + Avoid Night Mode toggle
-Author: Roger
-Version: 1.2.2 (Complete Restoration)
+Patch: Kobo-style Sleep Screen Banner + Avoid Night Mode toggle + Smart Title 
+Original patch: https://github.com/zenixlabs/koreader-frankenpatches-public/blob/main/2-kobo-style-sleepscreen-banner.lua
+This mod was done before the author added the "Highlight" feature to the patch, so this does not include it.
 --]]
 
 local Blitbuffer = require("ffi/blitbuffer")
@@ -287,4 +287,5 @@ local orig_ReaderMenu_setUpdateItemTable = ReaderMenu.setUpdateItemTable
 ReaderMenu.setUpdateItemTable = function(self)
     orig_ReaderMenu_setUpdateItemTable(self)
     add_options_in_screensaver(ReaderMenuOrder, self, "reader")
+
 end
