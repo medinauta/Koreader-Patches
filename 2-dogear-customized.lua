@@ -15,9 +15,9 @@ local DOGEAR_Y_OFFSET        = 0     -- Extra pixels to push dogear DOWN from to
 
 -- Icon to use for the dogear. Use nil to keep the default ("dogear.alpha").
 -- To use a custom image, place your file in /koreader/icons folder
--- and enter the bare name without extension (e.g. if your file is "dogear2.svg" enter "dogear2").
+-- and enter the bare name in quotes without extension (e.g. if your file is "dogear2.svg" enter "dogear2").
 
-local DOGEAR_ICON            = "dogear3"   -- nil = default | example: "dogear2"
+local DOGEAR_ICON            = nil   -- nil = default | example: "dogear2"
 local DOGEAR_ALPHA           = true -- false = default | true = enable transparency
 
 -- ============================================================
@@ -139,4 +139,5 @@ ReaderView.paintTo = function(self, bb, x, y)
         self.dogear:paintTo(bb, x, y)
     end
 end
+
 
