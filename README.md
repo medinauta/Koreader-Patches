@@ -320,7 +320,7 @@ Adds a GUI menu option to easily change the color of the reading progress bar.
 	<summary><b>Bigger Dog-ear (corner bookmark)</b></summary>
 Increases the visual size of the "dogear" triangle used to mark pages.
 
-📂 [View Code](/2-dogear-big.lua)
+📂 [View Code](/2-dogear-customized.lua.lua)
 
 ![Screenshot Description](link-to-your-image.png)
 	</details>
