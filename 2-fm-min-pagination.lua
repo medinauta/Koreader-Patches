@@ -26,7 +26,7 @@ local FOOTER_HEIGHT = "minimal"
 
 -- Font size for the page-info button when FOOTER_HEIGHT = "minimal"
 -- Button default is 20. Lower = shorter footer bar. Tweak to taste.
-local FOOTER_FONT_SIZE = 11
+local FOOTER_FONT_SIZE = 12
 
 -- ============================================================
 --  HELPERS
@@ -138,4 +138,5 @@ end
 
 -- Apply the patch to the Menu base class
 local Menu = require("ui/widget/menu")
+
 patchMenu(Menu)
