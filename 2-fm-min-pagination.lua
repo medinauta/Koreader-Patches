@@ -1,3 +1,10 @@
+-- Filemanager Minimal Pagination
+-- Change arrows to dots or remove them. 
+-- Change the pagination "Page 1 of 50" to "1/50"
+-- Change the font size and footer height. 
+-- Original patch:
+-- https://github.com/Fi4DkseUie73kfo9d/KoReader-Minimalist-Pagination/blob/main/2-filemanager-pagination-mod.lua
+
 local userpatch = require("userpatch")
 local _ = require("gettext")
 local T = require("ffi/util").template
@@ -9,8 +16,8 @@ local Size = require("ui/size")
 -- ============================================================
 
 -- Arrows style for pagination chevron buttons
---   "remove"  → hide the buttons entirely
---   "minimal" → replace icons with dot characters (• and ••)
+--   "remove"  → hide the pagination buttons entirely
+--   "minimal" → replace arrow icons with dot characters (• and ••)
 --   "default" → leave the original chevron icons unchanged
 local ARROWS = "minimal"
 
@@ -140,3 +147,4 @@ end
 local Menu = require("ui/widget/menu")
 
 patchMenu(Menu)
+
