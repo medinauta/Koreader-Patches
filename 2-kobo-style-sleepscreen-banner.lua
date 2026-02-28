@@ -16,6 +16,7 @@ local TextWidget = require("ui/widget/textwidget")
 local UIManager = require("ui/uimanager")
 local VerticalGroup = require("ui/widget/verticalgroup")
 local logger = require("logger")
+local Utf8Proc = require("ffi/utf8proc")
 local _ = require("gettext")
 
 local screen_w = Screen:getWidth()
@@ -36,7 +37,7 @@ local function smartTitleCase(str)
 
     local capitalize_next = true  -- start with first word capitalized
     for i, w in ipairs(words) do
-        local lower = w:lower()
+        local lower = Utf8Proc.lowercase(w)
         if capitalize_next or i == 1 or i == #words or not small_words[lower] then
             words[i] = lower:gsub("^%l", string.upper)
         else
@@ -289,3 +290,4 @@ ReaderMenu.setUpdateItemTable = function(self)
     add_options_in_screensaver(ReaderMenuOrder, self, "reader")
 
 end
+
