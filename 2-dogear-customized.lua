@@ -1,5 +1,5 @@
 -- ============================================================
--- ReaderDogear Patch (2-dogear-big.lua)
+-- ReaderDogear Patch (2-dogear-customized.lua)
 -- https://github.com/medinauta/Koreader-Patches/
 -- Customizes the bookmark dogear: size, icon, and Y position.
 -- Also repaints the dogear AFTER ReaderView.paintTo so it always
@@ -139,5 +139,6 @@ ReaderView.paintTo = function(self, bb, x, y)
         self.dogear:paintTo(bb, x, y)
     end
 end
+
 
 
