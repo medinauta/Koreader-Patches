@@ -64,7 +64,7 @@ local function add_screensaver_options(sleep_menu)
         text = _("Close dialogs before screensaver"),
         checked_func = function() return G_reader_settings:isTrue("screensaver_close_widgets") end,
         callback = function(touchmenu)
-            G_reader_settings:flipNilOrFalse("screensaver_close_widgets")
+            G_reader_settings:toggle("screensaver_close_widgets")
             touchmenu:updateItems()
         end,
     })
@@ -86,7 +86,7 @@ local function add_screensaver_options(sleep_menu)
         text = _("Center and shrink book cover"),
         checked_func = function() return G_reader_settings:isTrue("screensaver_center_shrink") end,
         callback = function(touchmenu)
-            G_reader_settings:flipNilOrFalse("screensaver_center_shrink")
+            G_reader_settings:toggle("screensaver_center_shrink")
             touchmenu:updateItems()
         end,
     })
